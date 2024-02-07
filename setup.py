@@ -1,6 +1,8 @@
 from setuptools import find_packages,setup
 from typing import List
 
+HYPEN_E_DOT='-e .'
+
 def get_requirements(file_path:str)->List[str]:
     requirements=[]
     with open(file_path) as file_obj:
@@ -19,7 +21,7 @@ name ="Xray" ,
 version="0.0.1",
 author="Harish Nandhan",
 author_email="harishnandhan02@gmail.com",
-install_requires=get_requirements(),
+install_requires=get_requirements(r"C:\\Users\\Yogesh\\projects\\dlhealthcareproject\\requirements_dev.txt"),
 package=find_packages()
 
 
