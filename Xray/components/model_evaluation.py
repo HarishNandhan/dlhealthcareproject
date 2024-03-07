@@ -52,7 +52,7 @@ class ModelEvaluation:
             '''optimizer: Optimizer = SGD(
                 model.parameters(), **self.model_evaluation_config.optimizer_params
             )'''
-
+ 
             model.eval()
 
             logging.info("Exited the configuration method of Model evaluation class")
